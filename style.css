@@ -1,0 +1,122 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    height:70px;
+    padding:0 50px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    z-index:1000;
+}
+
+.header nav{
+    display:flex;
+    gap:25px;
+}
+
+.header a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+    padding:8px 16px;
+    border-radius:8px;
+}
+
+.header a:hover{
+    background:rgba(255,255,255,.15);
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+    padding:80px 20px;
+
+    scroll-margin-top:70px;
+}
+
+section h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+section h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+section p{
+    font-size:1.2rem;
+    max-width:700px;
+    line-height:1.7;
+}
+
+/* Different backgrounds */
+
+#home{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+#about{
+    background:#111827;
+}
+
+#skills{
+    background:#1f2937;
+}
+
+#projects{
+    background:#374151;
+}
+
+#contact{
+    background:#4b5563;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+}
