@@ -63,7 +63,7 @@ body{
 }
 
 .nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
     font-weight:500;
     padding:8px 16px;
@@ -79,13 +79,10 @@ body{
 
 .menu-btn{
     display:none;
-
     background:none;
     border:none;
-
-    color:white;
+    color:#fff;
     font-size:1.8rem;
-
     cursor:pointer;
 }
 
@@ -104,7 +101,6 @@ section{
     text-align:center;
 
     padding:80px 20px;
-
     scroll-margin-top:80px;
 }
 
@@ -125,12 +121,86 @@ section p{
 }
 
 /* ===============================
-   BACKGROUNDS
+   HERO SECTION
 ================================= */
 
 #home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:80px 10%;
+
     background:linear-gradient(135deg,#0f172a,#1e3a8a);
 }
+
+.home-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+
+    width:100%;
+    max-width:1200px;
+}
+
+.home-text{
+    flex:1;
+}
+
+.home-text h1{
+    font-size:4rem;
+}
+
+.home-text span{
+    color:#38bdf8;
+}
+
+.home-text h3{
+    font-size:2rem;
+    margin:20px 0;
+}
+
+.home-text p{
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+    width:380px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(56,189,248,.35);
+}
+
+/* Hero Button */
+
+.btn{
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#38bdf8;
+    color:#fff;
+
+    text-decoration:none;
+    border-radius:8px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* ===============================
+   SECTION BACKGROUNDS
+================================= */
 
 #about{
     background:#111827;
@@ -162,10 +232,6 @@ footer{
    RESPONSIVE
 ================================= */
 
-/* ===============================
-   RESPONSIVE
-================================= */
-
 @media (max-width:768px){
 
     .header{
@@ -181,19 +247,19 @@ footer{
         top:100%;
         right:0;
 
-        width:30%;
+        width:70%;
         max-width:320px;
 
         display:flex;
         flex-direction:column;
         align-items:center;
+
         gap:40px;
         padding:40px 0;
 
         background:#111827;
         border-radius:0 0 0 12px;
 
-        /* Hide the menu */
         transform:translateX(100%);
         opacity:0;
         visibility:hidden;
@@ -206,7 +272,6 @@ footer{
     }
 
     .nav.active{
-        position: absolute;
         transform:translateX(0);
         opacity:1;
         visibility:visible;
@@ -223,5 +288,22 @@ footer{
 
     section p{
         font-size:1rem;
+    }
+
+    .home-content{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .home-image img{
+        width:280px;
+    }
+
+    .home-text h1{
+        font-size:3rem;
+    }
+
+    .home-text h3{
+        font-size:1.5rem;
     }
 }
