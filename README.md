@@ -8,6 +8,8 @@ Welcome to my personal portfolio! This project documents my journey as I learn f
 
 Coming soon...
 
+🌍 https://natansportfolio.netlify.app
+
 ---
 
 ## 📖 About
@@ -28,19 +30,19 @@ This is the first version of my portfolio website. My goal is not only to create
 ## ✨ Current Features
 
 - Sticky navigation bar
+- Responsive mobile navigation
+- Glassmorphism header
+- Hero section
+- About Me section
 - Smooth scrolling
-- Modern glassmorphism header
-- Responsive navigation (work in progress)
-- Organized project structure
-
----
+- Organized HTML & CSS structure
 
 ## 🎯 Roadmap
 
 - [x] Project setup
 - [x] Navigation bar
-- [ ] Hero section
-- [ ] About section
+- [x] Hero section
+- [x] About section
 - [ ] Skills section
 - [ ] Projects section
 - [ ] Contact section
@@ -63,6 +65,18 @@ This is the first version of my portfolio website. My goal is not only to create
 *A screenshot of the portfolio will be added after the first complete version.*
 
 ---
+
+## 📌 Current Version
+
+**v1.2**
+
+Completed:
+- Navigation
+- Hero
+- About Me
+
+Currently working on:
+- Skills section
 
 ## 👨‍💻 Author
 
