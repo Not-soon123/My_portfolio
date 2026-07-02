@@ -1,30 +1,28 @@
 /* ===============================
    GOOGLE FONT
 ================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 /* ===============================
    RESET
 ================================= */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-html,
-body{
-    overflow-x: hidden;
-}
-
 html{
     scroll-behavior:smooth;
 }
 
+html,
 body{
-    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
     background:#0f172a;
     color:#fff;
 }
@@ -36,11 +34,14 @@ body{
 .header{
     position:fixed;
     top:0;
+    left:0;
+
+    width:100%;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
-    width: 100%;
+
     padding:18px 50px;
 
     background:rgba(255,255,255,.08);
@@ -71,8 +72,10 @@ body{
     color:#fff;
     text-decoration:none;
     font-weight:500;
+
     padding:8px 16px;
     border-radius:8px;
+
     transition:.3s;
 }
 
@@ -84,15 +87,18 @@ body{
 
 .menu-btn{
     display:none;
+
     background:none;
     border:none;
+
     color:#fff;
     font-size:1.8rem;
+
     cursor:pointer;
 }
 
 /* ===============================
-   SECTIONS
+   GENERAL SECTIONS
 ================================= */
 
 section{
@@ -103,9 +109,9 @@ section{
     align-items:center;
     flex-direction:column;
 
-    text-align:center;
-
     padding:80px 20px;
+
+    text-align:center;
     scroll-margin-top:80px;
 }
 
@@ -151,6 +157,11 @@ section p{
 
 .home-text{
     flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    text-align:left;
 }
 
 .home-text h1{
@@ -179,7 +190,7 @@ section p{
 
 .home-image img{
     width:380px;
-    border-radius:20px;
+    border-radius:10%;
     box-shadow:0 0 30px rgba(56,189,248,.35);
 }
 
@@ -204,20 +215,43 @@ section p{
 }
 
 /* ===============================
-   SECTION BACKGROUNDS
+   ABOUT SECTION
 ================================= */
 
 #about{
     background:#111827;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+
+    text-align:left;
 }
+
+#about p{
+    max-width:800px;
+}
+
+/* ===============================
+   SKILLS
+================================= */
 
 #skills{
     background:#1f2937;
 }
 
+/* ===============================
+   PROJECTS
+================================= */
+
 #projects{
     background:#374151;
 }
+
+/* ===============================
+   CONTACT
+================================= */
 
 #contact{
     background:#4b5563;
@@ -252,7 +286,7 @@ footer{
         top:100%;
         right:0;
 
-        width:30%;
+        width:75%;
         max-width:320px;
 
         display:flex;
@@ -300,6 +334,10 @@ footer{
         text-align:center;
     }
 
+    .home-text{
+        text-align:center;
+    }
+
     .home-image img{
         width:280px;
     }
@@ -310,5 +348,9 @@ footer{
 
     .home-text h3{
         font-size:1.5rem;
+    }
+
+    #about{
+        text-align:left;
     }
 }
